@@ -1,0 +1,46 @@
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+    #logo {
+        width: fit-content;
+        height: inherit;
+    }
+
+    ul#nav {
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            list-style-type: none;
+            margin-left: .5em;
+            margin-right: .5em;
+        }
+
+        li#contact {
+            background-color: var(--primary-background-color);
+            border-radius: 100vmax;
+            text-shadow: #000000 1px 1px 6px;
+
+            a {
+                color: var(--primary-color);
+            }
+        }
+
+        a {
+            color: #000000;
+            display: block;
+            font-size: 1.1em;
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-top: .4em;
+            padding-bottom: .4em;
+            text-decoration: none;
+        }
+    }
+}

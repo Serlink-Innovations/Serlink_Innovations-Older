@@ -1,0 +1,197 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  --lightmode: #FFFFFF;
+  --darkmode: #000000;
+  --primary-color: #FFFFFF;
+  --primary-text-color: #224c8d;
+  --primary-background-color: #224c8d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.navbar #logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: inherit;
+}
+.navbar ul#nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul#nav li {
+  list-style: none;
+  list-style-type: none;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.navbar ul#nav li#contact {
+  background-color: var(--primary-background-color);
+  border-radius: 100vmax;
+  text-shadow: #000000 1px 1px 6px;
+}
+.navbar ul#nav li#contact a {
+  color: var(--primary-color);
+}
+.navbar ul#nav a {
+  color: #000000;
+  display: block;
+  font-size: 1.1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  text-decoration: none;
+}
+
+body,
+html {
+  background-color: var(--lightmode);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+section.hero {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+section.hero img {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+section.hero #overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+section.hero #overlay #overlay__item {
+  width: 75%;
+  color: var(--primary-color);
+  display: block;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: 5.5em;
+  justify-self: left;
+  line-height: 1;
+}
+section.hero #overlay #overlay__item h3 {
+  font-size: 3em;
+  font-weight: 100;
+  font-variant: small-caps;
+  text-shadow: #000000 1px 1px 6px;
+}
+section.hero #overlay #overlay__item h1 {
+  font-size: 5em;
+  text-shadow: #000000 1px 1px 6px;
+}
+section.hero #overlay #overlay__item span {
+  color: var(--primary-text-color);
+  text-shadow: #000000 1px 1px 6px;
+}
+section.hero #overlay #overlay__item p {
+  width: 50%;
+  text-shadow: #000000 1px 1px 6px;
+}
+section.hero #overlay #overlay__item button.btn {
+  border: none;
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
+  margin-top: 0.5em;
+  padding: 0.8em 2em;
+  text-shadow: #000000 1px 1px 6px;
+}/*# sourceMappingURL=style.css.map */

@@ -16,21 +16,85 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
+  .navbar {
+    align-items: center;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .navbar #navToggler {
+    width: 45px;
+    height: 45px;
+    display: none !important;
+  }
+  .navbar ul#nav {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .navbar ul#nav li {
+    list-style: none;
+    list-style-type: none;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .navbar ul#nav li#contact {
+    background-color: var(--primary-background-color);
+    border-radius: 100vmax;
+    text-shadow: #000000 1px 1px 6px;
+  }
+  .navbar ul#nav li#contact a {
+    color: var(--primary-color);
+  }
+  .navbar ul#nav a {
+    color: #000000;
+    display: block;
+    font-size: 1.1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    text-decoration: none;
+  }
+}
 .navbar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr auto;
+  grid-template-areas: "logo navToggler";
+  padding: 0.5em;
+}
+.navbar .active {
+  width: 100%;
   align-items: center;
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  background-color: var(--primary-color);
+  display: flex !important;
+  margin-top: 4.15em !important;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+.navbar span#navToggler {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  color: var(--primary-background-color);
+  display: block;
+  grid-area: navToggler;
 }
 .navbar #logo {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: inherit;
+  grid-area: logo;
 }
 .navbar ul#nav {
-  display: flex;
+  display: none;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
@@ -39,14 +103,6 @@
   list-style-type: none;
   margin-left: 0.5em;
   margin-right: 0.5em;
-}
-.navbar ul#nav li#contact {
-  background-color: var(--primary-background-color);
-  border-radius: 100vmax;
-  text-shadow: #000000 1px 1px 6px;
-}
-.navbar ul#nav li#contact a {
-  color: var(--primary-color);
 }
 .navbar ul#nav a {
   color: #000000;
@@ -156,16 +212,27 @@ button.btn {
   text-shadow: #000000 1px 1px 6px;
 }
 
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
+  section.hero {
+    width: 100% !important;
+    height: 100vh !important;
+    display: block !important;
+  }
+  section.hero #overlay__item {
+    width: 55% !important;
+    margin-left: 5.5em !important;
+    justify-self: left;
+  }
+}
 section.hero {
   width: 100%;
-  height: 100vh;
+  max-height: 100vh;
   display: block;
   position: relative;
 }
 section.hero img {
   width: inherit;
   height: inherit;
-  position: absolute;
 }
 section.hero #overlay {
   width: 100%;
@@ -176,24 +243,22 @@ section.hero #overlay {
   top: 0;
 }
 section.hero #overlay #overlay__item {
-  width: 75%;
+  width: 95%;
   color: var(--primary-color);
-  display: block;
-  margin-top: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-left: 5.5em;
-  justify-self: left;
+  display: flex;
+  flex-direction: column;
   line-height: 1;
+  justify-content: center;
+  margin: auto;
 }
 section.hero #overlay #overlay__item h3 {
-  font-size: 3em;
+  font-size: clamp(1em, 5vw, 3em);
   font-weight: 100;
   text-transform: capitalize;
   text-shadow: #000000 1px 1px 6px;
 }
 section.hero #overlay #overlay__item h1 {
-  font-size: 4em;
+  font-size: clamp(2.4em, 5vw, 4em);
   text-transform: capitalize;
   text-shadow: #000000 1px 1px 6px;
 }
@@ -202,7 +267,8 @@ section.hero #overlay #overlay__item span {
   text-shadow: #000000 1px 1px 6px;
 }
 section.hero #overlay #overlay__item p {
-  width: 50%;
+  width: 85%;
+  font-size: clamp(0.5em, 5vw, 1em);
   text-shadow: #000000 1px 1px 6px;
 }
 
@@ -254,6 +320,11 @@ section.services #services__tray #service__item label {
   padding-bottom: 0.5em;
 }
 
+@media only screen and (max-width: 600px) and (max-width: 768px) and (max-width: 998px) {
+  section.content {
+    display: block !important;
+  }
+}
 section.content {
   display: grid;
   grid-template-columns: 1fr 1fr;

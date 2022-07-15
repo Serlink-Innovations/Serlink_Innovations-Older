@@ -92,16 +92,32 @@ button.btn {
     text-shadow: #000000 1px 1px 6px;
 }
 
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
+    section.hero {
+        width: 100% !important;
+        height: 100vh !important;
+        display: block !important;
+
+        #overlay__item {
+            width: 55% !important;
+            margin-left: 5.5em !important;
+            justify-self: left;
+        }
+
+    }
+
+
+}
+
 section.hero {
     width: 100%;
-    height: 100vh;
+    max-height: 100vh;
     display: block;
     position: relative;
 
     img {
         width: inherit;
         height: inherit;
-        position: absolute;
     }
 
     #overlay {
@@ -113,25 +129,23 @@ section.hero {
         top: 0;
 
         #overlay__item {
-            width: 75%;
+            width: 95%;
             color: var(--primary-color);
-            display: block;
-            margin-top: auto;
-            margin-right: auto;
-            margin-bottom: auto;
-            margin-left: 5.5em;
-            justify-self: left;
+            display: flex;
+            flex-direction: column;
             line-height: 1;
+            justify-content: center;
+            margin: auto;
 
             h3 {
-                font-size: 3em;
+                font-size: clamp(1em, 5vw, 3em);
                 font-weight: 100;
                 text-transform: capitalize;
                 text-shadow: #000000 1px 1px 6px;
             }
 
             h1 {
-                font-size: 4em;
+                font-size: clamp(2.4em, 5vw, 4em);
                 text-transform: capitalize;
                 text-shadow: #000000 1px 1px 6px;
             }
@@ -142,7 +156,8 @@ section.hero {
             }
 
             p {
-                width: 50%;
+                width: 85%;
+                font-size: clamp(.5em, 5vw, 1em);
                 text-shadow: #000000 1px 1px 6px;
             }
 
@@ -201,6 +216,12 @@ section.services {
                 padding-bottom: .5em;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 600px) and (max-width: 768px) and (max-width: 998px) {
+    section.content {
+        display: block !important;
     }
 }
 

@@ -413,4 +413,176 @@ section.content img.img {
   background-color: crimson;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+section.ease {
+  background-color: var(--primary-background-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  padding: 2em 1em;
+}
+section.ease #ease__img {
+  border: 0.5em solid cornflowerblue;
+  border-radius: 100%;
+  min-height: inherit;
+  width: inherit;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.ease #ease__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 450px;
+  height: 450px;
+}
+section.ease #ease__info {
+  color: var(--primary-color);
+  top: 0;
+}
+section.ease #ease__info h3 {
+  width: 100%;
+  display: block;
+  font-size: 2.5em;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+}
+section.ease #ease__info p {
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+}
+section.ease #ease__info div.steps {
+  display: block;
+  padding-top: 1em;
+}
+section.ease #ease__info div.steps #step {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1em;
+}
+section.ease #ease__info div.steps #step span#number {
+  display: flex;
+  border-radius: 100vmax;
+  background-color: cornflowerblue;
+  font-size: 2em;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5em;
+  text-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
+}
+section.ease #ease__info div.steps #step div#step__container > h4 {
+  font-size: 1.2em;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+}
+section.ease #ease__info div.steps #step p {
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+}
+
+section.testimonials {
+  display: block;
+}
+section.testimonials h3 {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+section.testimonials div.testimonials__slider {
+  display: flex;
+}
+section.testimonials div.testimonials__slider div.slide {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+section.testimonials div.testimonials__slider div.slide div.testimonial__content {
+  width: 80%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 2em;
+}
+section.testimonials div.testimonials__slider div.slide div.testimonial__content label#name {
+  color: var(--primary-background-color);
+  font-size: 1.5em;
+}
+section.testimonials div.testimonials__slider div.slide div.testimonial__content label#position {
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
+  section.footer {
+    display: flex !important;
+  }
+}
+section.footer {
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
+  display: block;
+  padding: 2em;
+  gap: 2em;
+}
+section.footer h3 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding-bottom: 1em;
+}
+section.footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.footer label {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+section.footer #contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+section.footer #social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+section.footer #social-links ul {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+section.footer #social-links ul li {
+  list-style: none;
+  list-style-type: none;
+}
+section.footer #social-links ul a {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+div.copyright {
+  align-items: center;
+  display: flex;
+  font-size: clamp(0.8em, 3vw, 1em);
+  padding: 1em;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

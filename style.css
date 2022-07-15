@@ -220,7 +220,7 @@ button.btn {
   }
   section.hero #overlay__item {
     width: 55% !important;
-    margin-left: 5.5em !important;
+    margin-left: 6.5em !important;
     justify-self: left;
   }
 }
@@ -252,13 +252,13 @@ section.hero #overlay #overlay__item {
   margin: auto;
 }
 section.hero #overlay #overlay__item h3 {
-  font-size: clamp(1em, 5vw, 3em);
+  font-size: clamp(1.5em, 4vw, 2.5em);
   font-weight: 100;
   text-transform: capitalize;
   text-shadow: #000000 1px 1px 6px;
 }
 section.hero #overlay #overlay__item h1 {
-  font-size: clamp(2.4em, 5vw, 4em);
+  font-size: clamp(2em, 4vw, 4em);
   text-transform: capitalize;
   text-shadow: #000000 1px 1px 6px;
 }
@@ -268,7 +268,7 @@ section.hero #overlay #overlay__item span {
 }
 section.hero #overlay #overlay__item p {
   width: 85%;
-  font-size: clamp(0.5em, 5vw, 1em);
+  font-size: clamp(0.8em, 3vw, 1em);
   text-shadow: #000000 1px 1px 6px;
 }
 
@@ -286,9 +286,25 @@ section.services h3 {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
 }
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
+  section.services div#services__info {
+    display: grid !important;
+    grid-template-columns: 2fr auto !important;
+  }
+}
 section.services div#services__info {
-  display: grid;
-  grid-template-columns: 2fr auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) and (max-width: 998px) {
+  section.services #services__tray {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section.services #services__tray {
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)) !important;
+  }
 }
 section.services #services__tray {
   display: grid;
@@ -314,8 +330,11 @@ section.services #services__tray #service__item svg {
   padding-bottom: 0.5em;
 }
 section.services #services__tray #service__item label {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   color: var(--secondary-color);
-  font-size: 1.2em;
+  font-size: clamp(0.4em, 3vw, 1em);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }

@@ -505,7 +505,7 @@ section.testimonials div.testimonials__slider div.slide {
   height: fit-content;
 }
 section.testimonials div.testimonials__slider div.slide div.testimonial__content {
-  width: 80%;
+  width: 90%;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -522,7 +522,9 @@ section.testimonials div.testimonials__slider div.slide div.testimonial__content
 
 @media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
   section.footer {
-    display: flex !important;
+    display: grid !important;
+    grid-template-columns: 2fr 0.5fr 0.5fr;
+    place-items: center;
   }
 }
 section.footer {

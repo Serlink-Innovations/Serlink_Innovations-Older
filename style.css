@@ -334,7 +334,7 @@ section.services #services__tray #service__item label {
   width: -moz-max-content;
   width: max-content;
   color: var(--secondary-color);
-  font-size: clamp(0.9em, 3vw, 1.2em);
+  font-size: clamp(1em, 3vw, 1.2em);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }

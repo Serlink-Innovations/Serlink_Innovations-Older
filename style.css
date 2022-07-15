@@ -35,6 +35,9 @@
     flex-direction: row !important;
   }
   .navbar ul#nav li {
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
     list-style: none;
     list-style-type: none;
     margin-left: 0.5em;
@@ -68,14 +71,15 @@
 }
 .navbar .active {
   width: 100%;
-  align-items: center;
+  min-height: 100%;
   background-color: var(--primary-color);
   display: flex !important;
-  margin-top: 4.15em !important;
-  position: absolute;
-  z-index: 9999;
+  margin-top: 4.1em !important;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  z-index: 999999;
 }
 .navbar span#navToggler {
   width: 45px;
@@ -99,10 +103,11 @@
   padding: 0;
 }
 .navbar ul#nav li {
+  width: 100%;
   list-style: none;
   list-style-type: none;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 .navbar ul#nav a {
   color: #000000;
@@ -212,6 +217,18 @@ button.btn {
   text-shadow: #000000 1px 1px 6px;
 }
 
+@media only screen and (max-width: 600px) and (max-width: 768px) and (max-width: 998px) {
+  .stickyHeader {
+    width: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+  }
+  .stickyHeader + .hero {
+    padding-top: 102px;
+  }
+}
 @media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
   section.hero {
     width: 100% !important;
@@ -341,7 +358,27 @@ section.services #services__tray #service__item label {
 
 @media only screen and (max-width: 600px) and (max-width: 768px) and (max-width: 998px) {
   section.content {
-    display: block !important;
+    display: grid !important;
+    grid-template-areas: "one one" "one-text one-text" "two two" "two-text two-text" "three three" "three-text three-text";
+  }
+  section.content #one {
+    width: 100% !important;
+    grid-area: one;
+  }
+  section.content #one-text {
+    grid-area: one-text;
+  }
+  section.content #two {
+    grid-area: two;
+  }
+  section.content #two-text {
+    grid-area: two-text;
+  }
+  section.content #three {
+    grid-area: three;
+  }
+  section.content #three-text {
+    grid-area: three-text;
   }
 }
 section.content {
@@ -353,7 +390,7 @@ section.content div.item {
   height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-left: 2em;
   padding-right: 2em;
 }
@@ -364,7 +401,10 @@ section.content div.item h3#item__title {
   justify-content: flex-start;
   width: 100%;
 }
-section.content img#img {
+section.content div.item ol {
+  padding: 1em;
+}
+section.content img.img {
   width: 100%;
   height: 450px;
   background-color: crimson;

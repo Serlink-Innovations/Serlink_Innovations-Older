@@ -19,6 +19,7 @@
             flex-direction: row !important;
 
             li {
+                width: max-content !important;
                 list-style: none;
                 list-style-type: none;
                 margin-left: .5em;
@@ -60,14 +61,15 @@
 
     .active {
         width: 100%;
-        align-items: center;
+        min-height: 100%;
         background-color: var(--primary-color);
         display: flex !important;
-        margin-top: 4.15em !important;
-        position: absolute;
-        z-index: 9999;
+        margin-top: 4.1em !important;
+        position: fixed;
         top: 0;
         left: 0;
+        right: 0;
+        z-index: 999999;
     }
 
     span#navToggler {
@@ -92,10 +94,11 @@
         padding: 0;
 
         li {
+            width: 100%;
             list-style: none;
             list-style-type: none;
-            margin-left: .5em;
-            margin-right: .5em;
+            padding-left: .5em;
+            padding-right: .5em;
         }
 
         a {

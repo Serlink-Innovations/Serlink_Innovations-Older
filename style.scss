@@ -231,7 +231,8 @@ section.services {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 1em;
+            padding-left: 1em;
+            padding-right: 1em;
 
             img,
             svg {
@@ -314,7 +315,9 @@ section.content {
         }
 
         ol {
-            padding: 1em;
+            margin: 0;
+            padding-left: 1em;
+            padding-right: 1em;
         }
     }
 

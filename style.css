@@ -336,7 +336,8 @@ section.services #services__tray #service__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 section.services #services__tray #service__item img,
 section.services #services__tray #service__item svg {
@@ -402,7 +403,9 @@ section.content div.item h3#item__title {
   width: 100%;
 }
 section.content div.item ol {
-  padding: 1em;
+  margin: 0;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 section.content img.img {
   width: 100%;

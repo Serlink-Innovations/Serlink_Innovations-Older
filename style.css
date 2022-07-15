@@ -6,6 +6,7 @@
   --lightmode: #FFFFFF;
   --darkmode: #000000;
   --primary-color: #FFFFFF;
+  --secondary-color: #000000;
   --primary-text-color: #224c8d;
   --primary-background-color: #224c8d;
   font-synthesis: none;
@@ -139,6 +140,22 @@ select {
     scroll-behavior: auto !important;
   }
 }
+/**Button Customization**/
+button.btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
+  margin-top: 0.5em;
+  padding: 0.8em 2em;
+  text-shadow: #000000 1px 1px 6px;
+}
+
 section.hero {
   width: 100%;
   height: 100vh;
@@ -172,11 +189,12 @@ section.hero #overlay #overlay__item {
 section.hero #overlay #overlay__item h3 {
   font-size: 3em;
   font-weight: 100;
-  font-variant: small-caps;
+  text-transform: capitalize;
   text-shadow: #000000 1px 1px 6px;
 }
 section.hero #overlay #overlay__item h1 {
-  font-size: 5em;
+  font-size: 4em;
+  text-transform: capitalize;
   text-shadow: #000000 1px 1px 6px;
 }
 section.hero #overlay #overlay__item span {
@@ -187,11 +205,79 @@ section.hero #overlay #overlay__item p {
   width: 50%;
   text-shadow: #000000 1px 1px 6px;
 }
-section.hero #overlay #overlay__item button.btn {
-  border: none;
-  background-color: var(--primary-background-color);
-  color: var(--primary-color);
-  margin-top: 0.5em;
-  padding: 0.8em 2em;
-  text-shadow: #000000 1px 1px 6px;
+
+section.services {
+  display: block;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+section.services h3 {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+section.services div#services__info {
+  display: grid;
+  grid-template-columns: 2fr auto;
+}
+section.services #services__tray {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+}
+section.services #services__tray #service__item {
+  width: 100%;
+  height: inherit;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+}
+section.services #services__tray #service__item img,
+section.services #services__tray #service__item svg {
+  display: block;
+  width: 6em;
+  height: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+section.services #services__tray #service__item label {
+  color: var(--secondary-color);
+  font-size: 1.2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+section.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+section.content div.item {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+section.content div.item h3#item__title {
+  display: flex;
+  font-size: 1.8em;
+  font-weight: 100;
+  justify-content: flex-start;
+  width: 100%;
+}
+section.content img#img {
+  width: 100%;
+  height: 450px;
+  background-color: crimson;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

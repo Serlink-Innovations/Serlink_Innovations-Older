@@ -454,9 +454,11 @@ section.testimonials {
 
 @media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
     section.footer {
-        display: grid !important;
-        grid-template-columns: 2fr .5fr .5fr;
-        place-items: center;
+        display: flex !important;
+        //grid-template-columns: 2fr .5fr .5fr;
+        //place-items: center;
+        align-items: center !important;
+        justify-content: center !important;
     }
 }
 
@@ -485,6 +487,10 @@ section.footer {
 
     label {
         width: max-content;
+    }
+
+    #mission-statement {
+        width: 60%;
     }
 
     #contact-info {

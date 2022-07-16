@@ -522,9 +522,9 @@ section.testimonials div.testimonials__slider div.slide div.testimonial__content
 
 @media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
   section.footer {
-    display: grid !important;
-    grid-template-columns: 2fr 0.5fr 0.5fr;
-    place-items: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
 section.footer {
@@ -553,6 +553,9 @@ section.footer label {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+section.footer #mission-statement {
+  width: 60%;
 }
 section.footer #contact-info {
   display: flex;

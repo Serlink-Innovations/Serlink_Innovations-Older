@@ -2,61 +2,47 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Serlink Innovations</title>
+  <title>Vite App</title>
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/style.css">
 
 </head>
 
 <body>
 
-  <header class="main-header">
+  <header class="header-main">
 
     <nav class="navbar">
 
-      <a href="/" id="logo"><img src="/img/logo.png" alt=""></a>
+      <span onclick="mobileToggle()" id="navToggler">
+
+        <svg viewBox="0 0 24 24">
+          <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+        </svg>
+
+      </span>
+
+      <img src="/img/logo-trans.png" alt="" id="logo">
 
       <ul id="nav">
 
-        <li>
-          <a href="">Home</a>
-        </li>
+        <li><a href="">Home</a></li>
 
-        <li>
-          <a href="">Portfolio</a>
-        </li>
+        <li><a href="">Portfolio</a></li>
 
-        <li>
-          <a href="">Contact</a>
-        </li>
+        <li><a href="">Services</a></li>
 
-        <li>
-          <a href="">About</a>
+        <li><a href="">About</a></li>
+
+        <li id="contact">
+          <a href="">Contact Us</a>
         </li>
 
       </ul>
-
-      <a href="" id="donate">
-        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
-          width="24px" fill="#000000">
-          <g>
-            <rect fill="none" height="24" width="24" y="0" />
-          </g>
-          <g>
-            <g>
-              <g>
-                <path
-                  d="M19.05,4.91C17.18,3.03,14.69,2,12.04,2c-5.46,0-9.91,4.45-9.91,9.91c0,1.75,0.46,3.45,1.32,4.95L2.05,22l5.25-1.38 c1.45,0.79,3.08,1.21,4.74,1.21h0c0,0,0,0,0,0c5.46,0,9.91-4.45,9.91-9.91C21.95,9.27,20.92,6.78,19.05,4.91z M12.04,20.15 L12.04,20.15c-1.48,0-2.93-0.4-4.2-1.15l-0.3-0.18l-3.12,0.82l0.83-3.04l-0.2-0.31c-0.82-1.31-1.26-2.83-1.26-4.38 c0-4.54,3.7-8.24,8.24-8.24c2.2,0,4.27,0.86,5.82,2.42c1.56,1.56,2.41,3.63,2.41,5.83C20.28,16.46,16.58,20.15,12.04,20.15z M16.56,13.99c-0.25-0.12-1.47-0.72-1.69-0.81c-0.23-0.08-0.39-0.12-0.56,0.12c-0.17,0.25-0.64,0.81-0.78,0.97 c-0.14,0.17-0.29,0.19-0.54,0.06c-0.25-0.12-1.05-0.39-1.99-1.23c-0.74-0.66-1.23-1.47-1.38-1.72c-0.14-0.25-0.02-0.38,0.11-0.51 c0.11-0.11,0.25-0.29,0.37-0.43c0.12-0.14,0.17-0.25,0.25-0.41c0.08-0.17,0.04-0.31-0.02-0.43c-0.06-0.12-0.56-1.34-0.76-1.84 c-0.2-0.48-0.41-0.42-0.56-0.43C8.86,7.33,8.7,7.33,8.53,7.33c-0.17,0-0.43,0.06-0.66,0.31C7.65,7.89,7.01,8.49,7.01,9.71 c0,1.22,0.89,2.4,1.01,2.56c0.12,0.17,1.75,2.67,4.23,3.74c0.59,0.26,1.05,0.41,1.41,0.52c0.59,0.19,1.13,0.16,1.56,0.1 c0.48-0.07,1.47-0.6,1.67-1.18c0.21-0.58,0.21-1.07,0.14-1.18S16.81,14.11,16.56,13.99z" />
-              </g>
-            </g>
-          </g>
-        </svg>
-        <label for="">WhatsApp</label>
-      </a>
 
     </nav>
 
@@ -68,54 +54,47 @@
       src="https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       alt="">
 
-    <div id="hero__overlay">
+    <div id="overlay">
 
-      <div id="hero__overlay-item">
-
+      <div id="overlay__item">
         <h3 id="hero__title">
           IT SOLUTIONS
         </h3>
 
-        <h1 id="hero__title2">FOR YOUR <span>BUSINESS</span></h1>
+        <h1>FOR YOUR <span>BUSINESS</span></h1>
 
-        <p id="hero__info-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit corrupti harum earum.
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit corrupti harum earum, ullam
+          deleniti quibusdam, magnam praesentium, eaque beatae commodi!
         </p>
 
         <button href="" class="btn">
           Innovate Now
         </button>
-
       </div>
 
     </div>
 
   </section>
 
-  <h3 class="display-section">
-
-    Our Services
-
-  </h3>
-
   <section class="services">
 
-    <div id="services__caption">
+    <h3>Our Services</h3>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque deleniti, veniam vitae dicta itaque quibusdam
-        nulla sit sapiente doloribus modi, vel eaque?
-      </p>
+    <div id="services__info">
 
-      <button class="btn">
-        Donate
-      </button>
+      <P>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est animi debitis eligendi maxime, placeat omnis
+        voluptatibus et ad itaque tenetur praesentium officia ipsa possimus, deleniti dolor velit unde qui rem!
+      </P>
+
+      <button href="" class="btn">Learn More</button>
 
     </div>
 
     <br>
 
-    <div id="services__card-tray">
+    <div id="services__tray">
 
       <div id="service__item">
 
@@ -151,9 +130,9 @@
 
     </div>
 
-    <br>
-
   </section>
+
+  <br>
 
   <section class="content">
 
@@ -184,18 +163,13 @@
 
     </div>
 
-    <img
-      src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      alt="" class="img" id="two">
-
     <div class="item" id="two-text">
 
       <h3 id="item__title">
         Web Design
       </h3>
 
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem veniam et numquam optio consequuntur
-        eligendi
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem veniam et numquam optio consequuntur eligendi
         obcaecati a quas ipsa, tempora quia, hic accusamus deleniti commodi officiis fugit officia, minima sed?
       </p>
 
@@ -209,6 +183,10 @@
       <button href="" class="btn">Contact Us</button>
 
     </div>
+
+    <img
+      src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="" class="img" id="two">
 
     <img
       src="https://images.pexels.com/photos/4792719/pexels-photo-4792719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -240,9 +218,13 @@
 
   <section class="ease">
 
-    <img
-      src="https://images.pexels.com/photos/4226256/pexels-photo-4226256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      alt="" id="ease__img">
+    <div id="ease__img">
+
+      <img
+        src="https://images.pexels.com/photos/4226256/pexels-photo-4226256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="">
+
+    </div>
 
     <div id="ease__info">
 
@@ -316,13 +298,9 @@
 
   </section>
 
-  <h3 class="display-section">
-
-    Testimonials
-
-  </h3>
-
   <section class="testimonials">
+
+    <h3>Testimonials</h3>
 
     <div class="testimonials__slider">
 
@@ -364,11 +342,9 @@
 
   </section>
 
-  <br>
-
   <section class="footer">
 
-    <div class="footer__item" id="mission-statement">
+    <div id="mission-statement">
 
       <h3>Company Mission</h3>
 
@@ -380,7 +356,7 @@
 
     </div>
 
-    <div class="footer__item">
+    <div id="contact-info">
 
       <h3>Get in Touch</h3>
 
@@ -392,7 +368,7 @@
 
     </div>
 
-    <div class="footer__item">
+    <div id="social-links">
 
       <h3>Follow Us</h3>
 
@@ -418,7 +394,8 @@
 
   </div>
 
-  <script src="/js/carousel.js"></script>
+  <script type="module" src="/js/carousel.js"></script>
+  <script type="module" src="/js/main.js"></script>
 </body>
 
 </html>

@@ -99,8 +99,8 @@ header.main-header nav.navbar {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 header.main-header nav.navbar #logo {
   width: -webkit-fit-content;
@@ -171,7 +171,7 @@ header.main-header nav.navbar a#donate:hover {
 @media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
   section.hero {
     width: 100%;
-    height: 100vh !important;
+    height: 75vh !important;
   }
 }
 section.hero {

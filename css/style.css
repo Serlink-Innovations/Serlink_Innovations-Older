@@ -16,6 +16,7 @@ figure,
 blockquote,
 dl,
 dd {
+  color: #000000;
   margin: 0;
 }
 
@@ -32,6 +33,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+  color: rgba(0, 0, 0, 0.8);
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -213,12 +215,14 @@ section.hero #hero__overlay #hero__overlay-item {
   padding-right: 1em;
 }
 section.hero #hero__overlay #hero__overlay-item h3#hero__title {
+  color: #FFFFFF;
   font-size: clamp(0.8em, 5vw, 3.5em);
   font-weight: 100;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1;
 }
 section.hero #hero__overlay #hero__overlay-item h1#hero__title2 {
+  color: #FFFFFF;
   font-size: clamp(1em, 7vw, 5em);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1;
@@ -227,6 +231,7 @@ section.hero #hero__overlay #hero__overlay-item h1#hero__title2 span {
   color: #224c8d;
 }
 section.hero #hero__overlay #hero__overlay-item p#hero__info-text {
+  color: #FFFFFF;
   max-width: 65ch;
   padding-bottom: 1em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -333,9 +338,13 @@ section.content .item {
 }
 section.content .item h3#item__title {
   width: 100%;
+  color: #000000;
   display: flex;
   font-size: 2em;
-  font-weight: 100;
+  font-weight: 500;
+}
+section.content .item ol {
+  padding-left: 1em;
 }
 section.content .item button.btn {
   width: -webkit-max-content;
@@ -407,11 +416,19 @@ section.ease #ease__info {
 }
 section.ease #ease__info h3 {
   width: 100%;
+  color: #FFFFFF;
   display: block;
   font-family: sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
   font-size: 2.5em;
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+}
+section.ease #ease__info h4 {
+  color: #FFFFFF;
+  font-size: 1em;
+}
+section.ease #ease__info p {
+  color: #FFFFFF;
 }
 section.ease #ease__info div.steps {
   display: block;
@@ -484,7 +501,11 @@ section.footer {
 section.footer #mission-statement {
   max-width: 75ch;
 }
+section.footer #mission-statement p {
+  color: #FFFFFF;
+}
 section.footer .footer__item {
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   padding-bottom: 1em;
@@ -502,8 +523,9 @@ section.footer .footer__item ul a {
   text-decoration: none;
 }
 section.footer h3 {
+  color: #FFFFFF;
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 div.copyright {

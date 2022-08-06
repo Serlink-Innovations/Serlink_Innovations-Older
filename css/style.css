@@ -425,7 +425,7 @@ section.ease #ease__info h3 {
 }
 section.ease #ease__info h4 {
   color: #FFFFFF;
-  font-size: 1em;
+  font-size: clamp(1em, 3vw, 1.3em);
 }
 section.ease #ease__info p {
   color: #FFFFFF;

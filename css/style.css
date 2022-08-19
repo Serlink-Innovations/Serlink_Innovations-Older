@@ -267,7 +267,7 @@ section.hero #hero__overlay #hero__overlay-item p#hero__info-text {
   padding-bottom: 1em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: clamp(0.8em, 4vw, 1.2em);
-  line-height: 1;
+  line-height: 1.2;
 }
 
 section.services {
@@ -314,12 +314,12 @@ section.services div#services__card-tray #service__item label {
 
 @media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
   section.content {
-    grid-template-areas: "one one-text" "two-text two" "three three-text" !important;
+    grid-template-areas: "one one-text" "two-text two" "three three-text" "four-text four" !important;
   }
 }
 section.content {
   display: grid;
-  grid-template-areas: "one" "one-text" "two" "two-text" "three" "three-text";
+  grid-template-areas: "one" "one-text" "two" "two-text" "three" "three-text" "four" "four-text";
 }
 section.content .img {
   display: block;
@@ -329,6 +329,7 @@ section.content .img {
      object-fit: cover;
 }
 section.content .item {
+  min-height: 60vh;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -362,6 +363,12 @@ section.content #three {
 }
 section.content #three-text {
   grid-area: three-text;
+}
+section.content #four {
+  grid-area: four;
+}
+section.content #four-text {
+  grid-area: four-text;
 }
 
 @media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 900px) and (min-width: 1000px) {

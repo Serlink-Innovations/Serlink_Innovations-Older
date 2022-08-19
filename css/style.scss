@@ -276,7 +276,7 @@ section.hero {
                 padding-bottom: 1em;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 font-size: clamp(0.8em, 4vw, 1.2em);
-                line-height: 1;
+                line-height: 1.2;
             }
 
         }
@@ -339,6 +339,7 @@ section.services {
             "one one-text"
             "two-text two"
             "three three-text"
+            "four-text four"
              !important;
     }
 }
@@ -352,6 +353,8 @@ section.content {
         "two-text"
         "three"
         "three-text"
+        "four"
+        "four-text"
     ;
 
     .img {
@@ -362,6 +365,7 @@ section.content {
     }
 
     .item {
+        min-height: 60vh;
         justify-content: center;
         display: flex;
         flex-direction: column;
@@ -404,6 +408,14 @@ section.content {
 
     #three-text {
         grid-area: three-text;
+    }
+
+    #four {
+        grid-area: four;
+    }
+
+    #four-text {
+        grid-area: four-text;
     }
 }
 
